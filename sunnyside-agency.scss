@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  .orange_tete {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    height: 538px;
+    background: url(assets/images/photos/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .logo {
+      position: absolute;
+      width: 126px;
+      align-self: flex-start;
+      top: 0;
+    }
+    .arrow_down {
+      position: absolute;
+      width: 30px;
+      height: 107.48px;
+      top: 260px;
+    }
+    .creatives {
+      padding-left: 20px;
+      padding-bottom: 200px;
+      width: 327px;
+      height: 98px;
+      color: white;
+      line-height: 49px;
+      font-style: normal;
+      letter-spacing: 6.25px;
+      text-transform: uppercase;
+      text-align: center;
+
+      font: {
+        family: "Fraunces 9pts Soft", serif;
+        weight: 900;
+        size: 40px;
+      }
+    }
+  }
+  .image_oeuf {
+    @extend .orange_tete;
+    background: url(assets/images/photos/image-transform.jpg);
+    background: {
+      size: cover;
+      repeat: no-repeat;
+      position: center;
+    }
+    width: 375px;
+    height: 312px;
+  }
+  .transform_brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 327px;
+    height: 309px;
+    .transform_your_brand {
+      width: 327px;
+      height: 78px;
+      text-align: center;
+      letter-spacing: -0.23px;
+      line-height: 39.46px;
+      padding: 24px;
+      font: {
+        family: "Fraunces", serif;
+        weight: 900;
+        size: 32px;
+        style: normal;
+      }
+    }
+    .text_tranform_your_brand {
+      color: #808397;
+      width: 327px;
+      height: 150px;
+      line-height: 30px;
+      letter-spacing: -0.13px;
+      text-align: center;
+      padding-bottom: 20px;
+      padding-left: 24px;
+      padding-right: 24px;
+      font: {
+        family: "Barlow";
+        weight: 600;
+        size: 18px;
+      }
+    }
+    .learn1 {
+      width: 120px;
+      height: 25px;
+      line-height: 25px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding-top: 0px;
+      color: black;
+      font: {
+        family: "Fraunces", serif;
+        weight: 900;
+        size: 15px;
+      }
+    }
+  }
+  .image_verre_rose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    height: 350px;
+    padding: 10px;
+    .verre {
+      width: 375px;
+      height: 312px;
+    }
+  }
+  .stand_out {
+    @extend .transform_brand;
+    .titre_stand_out {
+      @extend .transform_your_brand;
+    }
+    .text_stand_out {
+      @extend .text_tranform_your_brand;
+    }
+    .learn2 {
+      @extend .learn1;
+    }
+  }
+  .graphic_design {
+    background: url(assets/images/photos/image-graphic-design.jpg);
+  }
+  .orange {
+    background: url(assets/images/photos/image-photography.jpg);
+  }
+}

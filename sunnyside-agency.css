@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+body .orange_tete, body .image_oeuf {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  height: 538px;
+  background: url(assets/images/photos/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .orange_tete .logo, body .image_oeuf .logo {
+  position: absolute;
+  width: 126px;
+  align-self: flex-start;
+  top: 0;
+}
+body .orange_tete .arrow_down, body .image_oeuf .arrow_down {
+  position: absolute;
+  width: 30px;
+  height: 107.48px;
+  top: 260px;
+}
+body .orange_tete .creatives, body .image_oeuf .creatives {
+  padding-left: 20px;
+  padding-bottom: 200px;
+  width: 327px;
+  height: 98px;
+  color: white;
+  line-height: 49px;
+  font-style: normal;
+  letter-spacing: 6.25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Fraunces 9pts Soft", serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+body .image_oeuf {
+  background: url(assets/images/photos/image-transform.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 375px;
+  height: 312px;
+}
+body .transform_brand, body .stand_out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 327px;
+  height: 309px;
+}
+body .transform_brand .transform_your_brand, body .stand_out .transform_your_brand, body .stand_out .titre_stand_out {
+  width: 327px;
+  height: 78px;
+  text-align: center;
+  letter-spacing: -0.23px;
+  line-height: 39.46px;
+  padding: 24px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 32px;
+  font-style: normal;
+}
+body .transform_brand .text_tranform_your_brand, body .stand_out .text_tranform_your_brand, body .stand_out .text_stand_out {
+  color: #808397;
+  width: 327px;
+  height: 150px;
+  line-height: 30px;
+  letter-spacing: -0.13px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 18px;
+}
+body .transform_brand .learn1, body .stand_out .learn1, body .stand_out .learn2 {
+  width: 120px;
+  height: 25px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-top: 0px;
+  color: black;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 15px;
+}
+body .image_verre_rose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  height: 350px;
+  padding: 10px;
+}
+body .image_verre_rose .verre {
+  width: 375px;
+  height: 312px;
+}
+body .graphic_design {
+  background: url(assets/images/photos/image-graphic-design.jpg);
+}
+body .orange {
+  background: url(assets/images/photos/image-photography.jpg);
+}/*# sourceMappingURL=sunnyside-agency.css.map */
