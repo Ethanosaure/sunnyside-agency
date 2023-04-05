@@ -347,6 +347,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 50px;
+  @include desktop() {
+    width: 720px;
+    height: 600px;
+    margin: 0;
+  }
   .cerise_titre {
     text-transform: uppercase;
     height: 35px;
@@ -382,6 +387,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
+  @include desktop() {
+    position: absolute;
+    left: 720px;
+    top: 2000px;
+  }
 }
 .Photography {
   @extend .cerise_titre;
@@ -401,6 +411,17 @@ body {
     size: 16px;
     style: normal;
   }
+  @include desktop() {
+    position: absolute;
+    line-height: 25px;
+    letter-spacing: 5px;
+    top: 2760px;
+    left: 545px;
+    font: {
+      weight: 900;
+      size: 20px;
+    }
+  }
 }
 .emily {
   flex-direction: column;
@@ -409,6 +430,11 @@ body {
   justify-content: center;
   margin-top: 64px;
   width: 375px;
+  @include desktop() {
+    position: absolute;
+    left: 165px;
+    top: 2866px;
+  }
   .emily_photo {
     width: 72px;
     height: 72px;
@@ -468,6 +494,11 @@ body {
   .thomas_post {
     @extend .emily_post;
   }
+  @include desktop() {
+    position: absolute;
+    left: 545px;
+    top: 2866px;
+  }
 }
 .jennie {
   margin-bottom: 86px;
@@ -484,6 +515,11 @@ body {
   .jennie_post {
     @extend .emily_post;
   }
+  @include desktop() {
+    position: absolute;
+    left: 925px;
+    top: 2866px;
+  }
 }
 .images {
   width: 375px;
@@ -491,6 +527,12 @@ body {
   display: grid;
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
+  // @include desktop() {
+  //   position: absolute;
+  //   top: 3377px;
+  //   grid-template-columns: 1440px;
+  //   grid-template-rows: 360px 360px 360px 360px;
+  // }
   .milkbottles {
     width: 187.5px;
     height: 187.5px;
@@ -499,6 +541,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: 1/1;
+    @include desktop() {
+      position: absolute;
+      top: 3377px;
+      width: 360px;
+      height: 447px;
+    }
   }
   .orange_assiette {
     width: 187.5px;
@@ -508,6 +556,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: 1/2;
+    @include desktop() {
+      position: absolute;
+      top: 3377px;
+      left: 360px;
+      width: 360px;
+      height: 447px;
+    }
   }
   .cone {
     width: 187.5px;
@@ -517,6 +572,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: 2/1;
+    @include desktop() {
+      position: absolute;
+      top: 3377px;
+      left: 720px;
+      width: 360px;
+      height: 447px;
+    }
   }
   .sugar {
     width: 187.5px;
@@ -526,6 +588,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: 2/2;
+    @include desktop() {
+      position: absolute;
+      top: 3377px;
+      left: 1080px;
+      width: 360px;
+      height: 447px;
+    }
   }
 }
 .contacts {
@@ -537,6 +606,12 @@ body {
   width: 375px;
   height: 350px;
   background-color: #90d4c6;
+  @include desktop() {
+    position: absolute;
+    top: 3824px;
+    width: 1440px;
+    height: 350px;
+  }
   .logo2 {
     position: absolute;
     width: 170px;
@@ -558,6 +633,10 @@ body {
       size: 18px;
       style: normal;
     }
+    @include desktop() {
+      top: 145px;
+      left: 572px;
+    }
   }
   .services {
     position: absolute;
@@ -571,6 +650,10 @@ body {
       family: "barlow";
       size: 18px;
       style: normal;
+    }
+    @include desktop() {
+      top: 145px;
+      left: 677px;
     }
   }
   .Projects {
@@ -586,6 +669,10 @@ body {
       size: 18px;
       style: normal;
     }
+    @include desktop() {
+      top: 145px;
+      left: 803px;
+    }
   }
   .facebook {
     position: absolute;
@@ -593,17 +680,33 @@ body {
     left: 104px;
     width: 20px;
     height: 20px;
+    @include desktop() {
+      top: 258px;
+      left: 637px;
+    }
   }
   .instagram {
     @extend .facebook;
     left: 152px;
+    @include desktop() {
+      top: 258px;
+      left: 685px;
+    }
   }
   .twitter {
     @extend .facebook;
     left: 200px;
+    @include desktop() {
+      top: 258px;
+      left: 733px;
+    }
   }
   .pinterest {
     @extend .facebook;
     left: 248px;
+    @include desktop() {
+      top: 258px;
+      left: 781px;
+    }
   }
 }
