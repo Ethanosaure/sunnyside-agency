@@ -6,13 +6,19 @@ body {
   justify-content: center;
   align-items: center;
 }
-body .background {
+
+.background {
   background-color: white;
   width: 375px;
-  height: 5219px;
   position: relative;
 }
-body .orange_tete, body .image_oeuf {
+@media (min-width: 1440px) {
+  .background {
+    width: 1440px;
+  }
+}
+
+.orange_tete, .image_oeuf {
   position: relative;
   display: flex;
   justify-content: center;
@@ -25,24 +31,122 @@ body .orange_tete, body .image_oeuf {
   background-position: center;
   background-size: cover;
 }
-body .orange_tete .logo, body .image_oeuf .logo {
+@media (min-width: 1440px) {
+  .orange_tete, .image_oeuf {
+    width: 1440px;
+    height: 800px;
+  }
+}
+
+.contact {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .contact {
+    display: flex;
+    background-color: white;
+    padding: 16px 30px;
+    border-radius: 28px;
+    position: absolute;
+    top: 32px;
+    right: 48px;
+    font-family: "Fraunces";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.11px;
+  }
+}
+
+.projects1 {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .projects1 {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 235px;
+    color: white;
+    font-family: "barlow";
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.services1 {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .services1 {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 348px;
+    color: white;
+    font-family: "barlow";
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.about1 {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .about1 {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 467px;
+    color: white;
+    font-family: "barlow";
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.logo {
   position: absolute;
   width: 126px;
   top: 32px;
   left: 24px;
 }
-body .orange_tete .lignes, body .image_oeuf .lignes {
+@media (min-width: 1440px) {
+  .logo {
+    width: 170px;
+    height: 33px;
+    top: 46px;
+    left: 40px;
+  }
+}
+
+.lignes {
   position: absolute;
   top: 32px;
   right: 24px;
 }
-body .orange_tete .arrow_down, body .image_oeuf .arrow_down {
+@media (min-width: 1440px) {
+  .lignes {
+    display: none;
+    position: relative;
+  }
+}
+
+.arrow_down {
   position: absolute;
   width: 30px;
   height: 107.48px;
   top: 260px;
 }
-body .orange_tete .creatives, body .image_oeuf .creatives {
+@media (min-width: 1440px) {
+  .arrow_down {
+    left: 719.5px;
+    top: 360.54px;
+  }
+}
+
+.creatives {
   padding-left: 20px;
   padding-bottom: 200px;
   width: 327px;
@@ -57,7 +161,21 @@ body .orange_tete .creatives, body .image_oeuf .creatives {
   font-weight: 900;
   font-size: 40px;
 }
-body .image_oeuf {
+@media (min-width: 1440px) {
+  .creatives {
+    width: 750px;
+    height: 69px;
+    top: 195px;
+    left: 344.5px;
+    font-family: "Fraunces 9pts Soft", serif;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 69.05px;
+    letter-spacing: 8.75px;
+  }
+}
+
+.image_oeuf {
   background: url(assets/images/photos/image-transform.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,8 +184,17 @@ body .image_oeuf {
   height: 312px;
   margin-bottom: 64px;
 }
-body .transform_brand, body .stand_out {
-  position: relative;
+@media (min-width: 1440px) {
+  .image_oeuf {
+    width: 720px;
+    height: 600px;
+    position: absolute;
+    left: 720px;
+    top: 800px;
+  }
+}
+
+.transform_brand, .stand_out {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,18 +202,46 @@ body .transform_brand, body .stand_out {
   width: 375px;
   height: 309px;
 }
-body .transform_brand .transform_your_brand, body .stand_out .transform_your_brand, body .stand_out .titre_stand_out {
+@media (min-width: 1440px) {
+  .transform_brand, .stand_out {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 720px;
+    height: 600px;
+  }
+}
+
+.transform_your_brand, .stand_out .titre_stand_out {
   width: 327px;
   height: 78px;
   text-align: center;
   letter-spacing: -0.23px;
   line-height: 39.46px;
+  color: #24303e;
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 32px;
   font-style: normal;
 }
-body .transform_brand .text_tranform_your_brand, body .stand_out .text_tranform_your_brand, body .stand_out .text_stand_out {
+@media (min-width: 1440px) {
+  .transform_your_brand, .stand_out .titre_stand_out {
+    position: absolute;
+    width: 400px;
+    height: 98px;
+    top: 158px;
+    left: 165px;
+    letter-spacing: -0.29px;
+    line-height: 49.32px;
+    text-align: left;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 40px;
+    font-style: normal;
+  }
+}
+
+.text_tranform_your_brand, .stand_out .text_stand_out {
   color: #808397;
   width: 327px;
   height: 150px;
@@ -96,8 +251,20 @@ body .transform_brand .text_tranform_your_brand, body .stand_out .text_tranform_
   font-family: "Barlow";
   font-weight: 600;
   font-size: 18px;
+  font-style: normal;
 }
-body .transform_brand .learn1, body .stand_out .learn1, body .stand_out .learn2 {
+@media (min-width: 1440px) {
+  .text_tranform_your_brand, .stand_out .text_stand_out {
+    position: absolute;
+    left: 165px;
+    top: 288px;
+    width: 500px;
+    height: 90px;
+    text-align: left;
+  }
+}
+
+.learn1, .stand_out .learn2 {
   width: 120px;
   height: 25px;
   line-height: 25px;
@@ -110,7 +277,15 @@ body .transform_brand .learn1, body .stand_out .learn1, body .stand_out .learn2 
   font-weight: 900;
   font-size: 15px;
 }
-body .transform_brand .rectangle1, body .stand_out .rectangle1, body .stand_out .rectangle2 {
+@media (min-width: 1440px) {
+  .learn1, .stand_out .learn2 {
+    position: absolute;
+    left: 173.5px;
+    top: 418px;
+  }
+}
+
+.rectangle1, .stand_out .rectangle2 {
   align-self: center;
   width: 137px;
   height: 10px;
@@ -121,22 +296,48 @@ body .transform_brand .rectangle1, body .stand_out .rectangle1, body .stand_out 
   z-index: 0;
   opacity: 0.25;
 }
-body .image_verre_rose {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 375px;
-  height: 350px;
+@media (min-width: 1440px) {
+  .rectangle1, .stand_out .rectangle2 {
+    top: 433px;
+    left: 165.5px;
+  }
 }
-body .image_verre_rose .verre {
+
+.image_verre_rose {
+  display: flex;
   width: 375px;
   height: 312px;
+  background: url(assets/images/photos/image-stand-out.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-body .stand_out .rectangle2 {
+@media (min-width: 1440px) {
+  .image_verre_rose {
+    width: 720px;
+    height: 600px;
+  }
+}
+
+.stand_out .rectangle2 {
   background-color: #fe7766;
 }
-body .cerises, body .orange {
+@media (min-width: 1440px) {
+  .stand_out {
+    position: absolute;
+    top: 1400px;
+    left: 710px;
+  }
+  .stand_out .learn2 {
+    position: absolute;
+    top: 480px;
+  }
+  .stand_out .rectangle2 {
+    top: 495px;
+  }
+}
+
+.cerises, .orange {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -149,7 +350,7 @@ body .cerises, body .orange {
   background-size: cover;
   margin-top: 50px;
 }
-body .cerises .cerise_titre, body .cerises .Photography, body .orange .cerise_titre, body .orange .Photography {
+.cerises .cerise_titre, .cerises .Photography, .orange .cerise_titre, .orange .Photography {
   text-transform: uppercase;
   height: 35px;
   color: #24554a;
@@ -160,7 +361,7 @@ body .cerises .cerise_titre, body .cerises .Photography, body .orange .cerise_ti
   font-family: "Fraunces";
   font-size: 28px;
 }
-body .cerises .cerises_text, body .cerises .orange_text, body .orange .cerises_text, body .orange .orange_text {
+.cerises .cerises_text, .cerises .orange_text, .orange .cerises_text, .orange .orange_text {
   margin-bottom: 59px;
   color: #24554a;
   text-align: center;
@@ -171,14 +372,16 @@ body .cerises .cerises_text, body .cerises .orange_text, body .orange .cerises_t
   font-size: 16px;
   font-style: normal;
 }
-body .orange {
+
+.orange {
   background: url(assets/images/photos/image-photography.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
 }
-body .client {
+
+.client {
   margin-top: 64px;
   color: #a7aaad;
   line-height: 19.73px;
@@ -189,7 +392,8 @@ body .client {
   font-size: 16px;
   font-style: normal;
 }
-body .emily, body .jennie, body .thomas {
+
+.emily, .jennie, .thomas {
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -197,13 +401,13 @@ body .emily, body .jennie, body .thomas {
   margin-top: 64px;
   width: 375px;
 }
-body .emily .emily_photo, body .jennie .emily_photo, body .jennie .jennie_photo, body .thomas .emily_photo, body .thomas .thomas_photo {
+.emily .emily_photo, .jennie .emily_photo, .jennie .jennie_photo, .thomas .emily_photo, .thomas .thomas_photo {
   width: 72px;
   height: 72px;
   border-radius: 100%;
   margin-bottom: 32px;
 }
-body .emily .emily_text, body .jennie .emily_text, body .jennie .jennie_text, body .thomas .emily_text, body .thomas .thomas_text {
+.emily .emily_text, .jennie .emily_text, .jennie .jennie_text, .thomas .emily_text, .thomas .thomas_text {
   color: #5b636d;
   line-height: 32px;
   letter-spacing: -0.13px;
@@ -214,7 +418,7 @@ body .emily .emily_text, body .jennie .emily_text, body .jennie .jennie_text, bo
   font-size: 18px;
   font-style: normal;
 }
-body .emily .emily_name, body .jennie .emily_name, body .jennie .jennie_name, body .thomas .emily_name, body .thomas .thomas_name {
+.emily .emily_name, .jennie .emily_name, .jennie .jennie_name, .thomas .emily_name, .thomas .thomas_name {
   color: #24303e;
   line-height: 22.19px;
   letter-spacing: -0.13px;
@@ -225,7 +429,7 @@ body .emily .emily_name, body .jennie .emily_name, body .jennie .jennie_name, bo
   font-size: 18px;
   font-style: normal;
 }
-body .emily .emily_post, body .jennie .emily_post, body .jennie .jennie_post, body .thomas .emily_post, body .thomas .thomas_post {
+.emily .emily_post, .jennie .emily_post, .jennie .jennie_post, .thomas .emily_post, .thomas .thomas_post {
   color: #a7aaad;
   line-height: 25px;
   letter-spacing: -0.1px;
@@ -235,17 +439,18 @@ body .emily .emily_post, body .jennie .emily_post, body .jennie .jennie_post, bo
   font-size: 14px;
   font-style: normal;
 }
-body .jennie {
+
+.jennie {
   margin-bottom: 86px;
 }
-body .images {
+.images {
   width: 375px;
   height: 375px;
   display: grid;
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
 }
-body .images .milkbottles {
+.images .milkbottles {
   width: 187.5px;
   height: 187.5px;
   background: url(assets/images/photos/image-gallery-milkbottles.jpg);
@@ -254,7 +459,7 @@ body .images .milkbottles {
   background-size: cover;
   grid-area: 1/1;
 }
-body .images .orange_assiette {
+.images .orange_assiette {
   width: 187.5px;
   height: 187.5px;
   background: url(assets/images/photos/image-gallery-orange.jpg);
@@ -263,7 +468,7 @@ body .images .orange_assiette {
   background-size: cover;
   grid-area: 1/2;
 }
-body .images .cone {
+.images .cone {
   width: 187.5px;
   height: 187.5px;
   background: url(assets/images/photos/image-gallery-cone.jpg);
@@ -272,7 +477,7 @@ body .images .cone {
   background-size: cover;
   grid-area: 2/1;
 }
-body .images .sugar {
+.images .sugar {
   width: 187.5px;
   height: 187.5px;
   background: url(assets/images/photos/image-gallery-sugarcubes.jpg);
@@ -281,7 +486,8 @@ body .images .sugar {
   background-size: cover;
   grid-area: 2/2;
 }
-body .contacts {
+
+.contacts {
   position: relative;
   display: flex;
   justify-content: center;
@@ -291,14 +497,14 @@ body .contacts {
   height: 350px;
   background-color: #90d4c6;
 }
-body .contacts .logo2 {
+.contacts .logo2 {
   position: absolute;
   width: 170px;
   height: 33px;
   top: 64px;
   filter: invert(80%) sepia(90%) saturate(300%) hue-rotate(118deg) brightness(100%) contrast(50%);
 }
-body .contacts .about {
+.contacts .about {
   position: absolute;
   top: 137px;
   left: 39px;
@@ -310,7 +516,7 @@ body .contacts .about {
   font-size: 18px;
   font-style: normal;
 }
-body .contacts .services {
+.contacts .services {
   position: absolute;
   top: 137px;
   left: 144px;
@@ -322,7 +528,7 @@ body .contacts .services {
   font-size: 18px;
   font-style: normal;
 }
-body .contacts .Projects {
+.contacts .Projects {
   position: absolute;
   top: 137px;
   left: 270px;
@@ -334,19 +540,19 @@ body .contacts .Projects {
   font-size: 18px;
   font-style: normal;
 }
-body .contacts .facebook, body .contacts .pinterest, body .contacts .twitter, body .contacts .instagram {
+.contacts .facebook, .contacts .pinterest, .contacts .twitter, .contacts .instagram {
   position: absolute;
   top: 250px;
   left: 104px;
   width: 20px;
   height: 20px;
 }
-body .contacts .instagram {
+.contacts .instagram {
   left: 152px;
 }
-body .contacts .twitter {
+.contacts .twitter {
   left: 200px;
 }
-body .contacts .pinterest {
+.contacts .pinterest {
   left: 248px;
 }/*# sourceMappingURL=sunnyside-agency.css.map */
