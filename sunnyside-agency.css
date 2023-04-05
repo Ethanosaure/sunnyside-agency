@@ -6,15 +6,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.background {
+body .background {
   background-color: white;
   width: 375px;
   height: 5219px;
   position: relative;
 }
-
-.orange_tete, .image_oeuf {
+body .orange_tete, body .image_oeuf {
   position: relative;
   display: flex;
   justify-content: center;
@@ -27,24 +25,24 @@ body {
   background-position: center;
   background-size: cover;
 }
-.orange_tete .logo, .image_oeuf .logo {
+body .orange_tete .logo, body .image_oeuf .logo {
   position: absolute;
   width: 126px;
   top: 32px;
   left: 24px;
 }
-.orange_tete .lignes, .image_oeuf .lignes {
+body .orange_tete .lignes, body .image_oeuf .lignes {
   position: absolute;
   top: 32px;
   right: 24px;
 }
-.orange_tete .arrow_down, .image_oeuf .arrow_down {
+body .orange_tete .arrow_down, body .image_oeuf .arrow_down {
   position: absolute;
   width: 30px;
   height: 107.48px;
   top: 260px;
 }
-.orange_tete .creatives, .image_oeuf .creatives {
+body .orange_tete .creatives, body .image_oeuf .creatives {
   padding-left: 20px;
   padding-bottom: 200px;
   width: 327px;
@@ -59,8 +57,7 @@ body {
   font-weight: 900;
   font-size: 40px;
 }
-
-.image_oeuf {
+body .image_oeuf {
   background: url(assets/images/photos/image-transform.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,8 +66,8 @@ body {
   height: 312px;
   margin-bottom: 64px;
 }
-
-.transform_brand, .stand_out {
+body .transform_brand, body .stand_out {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +75,7 @@ body {
   width: 375px;
   height: 309px;
 }
-.transform_brand .transform_your_brand, .stand_out .transform_your_brand, .stand_out .titre_stand_out {
+body .transform_brand .transform_your_brand, body .stand_out .transform_your_brand, body .stand_out .titre_stand_out {
   width: 327px;
   height: 78px;
   text-align: center;
@@ -89,7 +86,7 @@ body {
   font-size: 32px;
   font-style: normal;
 }
-.transform_brand .text_tranform_your_brand, .stand_out .text_tranform_your_brand, .stand_out .text_stand_out {
+body .transform_brand .text_tranform_your_brand, body .stand_out .text_tranform_your_brand, body .stand_out .text_stand_out {
   color: #808397;
   width: 327px;
   height: 150px;
@@ -100,19 +97,31 @@ body {
   font-weight: 600;
   font-size: 18px;
 }
-.transform_brand .learn1, .stand_out .learn1, .stand_out .learn2 {
+body .transform_brand .learn1, body .stand_out .learn1, body .stand_out .learn2 {
   width: 120px;
   height: 25px;
   line-height: 25px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: black;
+  text-decoration: none;
+  z-index: 1;
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 15px;
 }
-
-.image_verre_rose {
+body .transform_brand .rectangle1, body .stand_out .rectangle1, body .stand_out .rectangle2 {
+  align-self: center;
+  width: 137px;
+  height: 10px;
+  background-color: #fad400;
+  border-radius: 28px;
+  position: absolute;
+  bottom: 30px;
+  z-index: 0;
+  opacity: 0.25;
+}
+body .image_verre_rose {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,12 +129,14 @@ body {
   width: 375px;
   height: 350px;
 }
-.image_verre_rose .verre {
+body .image_verre_rose .verre {
   width: 375px;
   height: 312px;
 }
-
-.cerises, .orange {
+body .stand_out .rectangle2 {
+  background-color: #fe7766;
+}
+body .cerises, body .orange {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -138,7 +149,7 @@ body {
   background-size: cover;
   margin-top: 50px;
 }
-.cerises .cerise_titre, .cerises .Photography, .orange .cerise_titre, .orange .Photography {
+body .cerises .cerise_titre, body .cerises .Photography, body .orange .cerise_titre, body .orange .Photography {
   text-transform: uppercase;
   height: 35px;
   color: #24554a;
@@ -149,7 +160,7 @@ body {
   font-family: "Fraunces";
   font-size: 28px;
 }
-.cerises .cerises_text, .cerises .orange_text, .orange .cerises_text, .orange .orange_text {
+body .cerises .cerises_text, body .cerises .orange_text, body .orange .cerises_text, body .orange .orange_text {
   margin-bottom: 59px;
   color: #24554a;
   text-align: center;
@@ -160,16 +171,14 @@ body {
   font-size: 16px;
   font-style: normal;
 }
-
-.orange {
+body .orange {
   background: url(assets/images/photos/image-photography.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
 }
-
-.client {
+body .client {
   margin-top: 64px;
   color: #a7aaad;
   line-height: 19.73px;
@@ -180,8 +189,7 @@ body {
   font-size: 16px;
   font-style: normal;
 }
-
-.emily, .jennie, .thomas {
+body .emily, body .jennie, body .thomas {
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -189,13 +197,13 @@ body {
   margin-top: 64px;
   width: 375px;
 }
-.emily .emily_photo, .jennie .emily_photo, .jennie .jennie_photo, .thomas .emily_photo, .thomas .thomas_photo {
+body .emily .emily_photo, body .jennie .emily_photo, body .jennie .jennie_photo, body .thomas .emily_photo, body .thomas .thomas_photo {
   width: 72px;
   height: 72px;
   border-radius: 100%;
   margin-bottom: 32px;
 }
-.emily .emily_text, .jennie .emily_text, .jennie .jennie_text, .thomas .emily_text, .thomas .thomas_text {
+body .emily .emily_text, body .jennie .emily_text, body .jennie .jennie_text, body .thomas .emily_text, body .thomas .thomas_text {
   color: #5b636d;
   line-height: 32px;
   letter-spacing: -0.13px;
@@ -206,7 +214,7 @@ body {
   font-size: 18px;
   font-style: normal;
 }
-.emily .emily_name, .jennie .emily_name, .jennie .jennie_name, .thomas .emily_name, .thomas .thomas_name {
+body .emily .emily_name, body .jennie .emily_name, body .jennie .jennie_name, body .thomas .emily_name, body .thomas .thomas_name {
   color: #24303e;
   line-height: 22.19px;
   letter-spacing: -0.13px;
@@ -217,7 +225,7 @@ body {
   font-size: 18px;
   font-style: normal;
 }
-.emily .emily_post, .jennie .emily_post, .jennie .jennie_post, .thomas .emily_post, .thomas .thomas_post {
+body .emily .emily_post, body .jennie .emily_post, body .jennie .jennie_post, body .thomas .emily_post, body .thomas .thomas_post {
   color: #a7aaad;
   line-height: 25px;
   letter-spacing: -0.1px;
@@ -227,18 +235,17 @@ body {
   font-size: 14px;
   font-style: normal;
 }
-
-.jennie {
+body .jennie {
   margin-bottom: 86px;
 }
-.images {
+body .images {
   width: 375px;
   height: 375px;
   display: grid;
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
 }
-.images .milkbottles {
+body .images .milkbottles {
   width: 187.5px;
   height: 187.5px;
   background: url(assets/images/photos/image-gallery-milkbottles.jpg);
@@ -247,7 +254,7 @@ body {
   background-size: cover;
   grid-area: 1/1;
 }
-.images .orange_assiette {
+body .images .orange_assiette {
   width: 187.5px;
   height: 187.5px;
   background: url(assets/images/photos/image-gallery-orange.jpg);
@@ -256,7 +263,7 @@ body {
   background-size: cover;
   grid-area: 1/2;
 }
-.images .cone {
+body .images .cone {
   width: 187.5px;
   height: 187.5px;
   background: url(assets/images/photos/image-gallery-cone.jpg);
@@ -265,7 +272,7 @@ body {
   background-size: cover;
   grid-area: 2/1;
 }
-.images .sugar {
+body .images .sugar {
   width: 187.5px;
   height: 187.5px;
   background: url(assets/images/photos/image-gallery-sugarcubes.jpg);
@@ -274,8 +281,7 @@ body {
   background-size: cover;
   grid-area: 2/2;
 }
-
-.contacts {
+body .contacts {
   position: relative;
   display: flex;
   justify-content: center;
@@ -285,14 +291,14 @@ body {
   height: 350px;
   background-color: #90d4c6;
 }
-.contacts .logo2 {
+body .contacts .logo2 {
   position: absolute;
   width: 170px;
   height: 33px;
   top: 64px;
   filter: invert(80%) sepia(90%) saturate(300%) hue-rotate(118deg) brightness(100%) contrast(50%);
 }
-.contacts .about {
+body .contacts .about {
   position: absolute;
   top: 137px;
   left: 39px;
@@ -304,7 +310,7 @@ body {
   font-size: 18px;
   font-style: normal;
 }
-.contacts .services {
+body .contacts .services {
   position: absolute;
   top: 137px;
   left: 144px;
@@ -316,7 +322,7 @@ body {
   font-size: 18px;
   font-style: normal;
 }
-.contacts .Projects {
+body .contacts .Projects {
   position: absolute;
   top: 137px;
   left: 270px;
@@ -328,19 +334,19 @@ body {
   font-size: 18px;
   font-style: normal;
 }
-.contacts .facebook, .contacts .pinterest, .contacts .twitter, .contacts .instagram {
+body .contacts .facebook, body .contacts .pinterest, body .contacts .twitter, body .contacts .instagram {
   position: absolute;
   top: 250px;
   left: 104px;
   width: 20px;
   height: 20px;
 }
-.contacts .instagram {
+body .contacts .instagram {
   left: 152px;
 }
-.contacts .twitter {
+body .contacts .twitter {
   left: 200px;
 }
-.contacts .pinterest {
+body .contacts .pinterest {
   left: 248px;
 }/*# sourceMappingURL=sunnyside-agency.css.map */
